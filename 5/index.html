@@ -2,6 +2,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <base target="_top">
     <title>Tangle: Getting Started</title>
+    <h1>Sample Meat Loaf</h1>
 
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="Fonts/Insolent/stylesheet.css" type="text/css">
@@ -21,8 +22,42 @@
 
 <body>
 
+<p id="recipeCalculator">To make meatloaf for <span class="TKAdjustableNumber" data-var="people"> people </span>, you will need <b data-var="beef"> pounds of ground beef</b>, <b data-var="eggs"> egg(s)</b>, and <b data-var="breadcrumbs">cup(s) of bread crumbs</b> Cooking time will be <b data-var="totalTime"> hour(s)</b>
+
+
 </body>
 
 <script>
 
+var tangle = new Tangle (document.getElementById("recipeCalculator"), {
+    initialize: function () {
+        this.people = 1;
+        this.beef = 1/4;
+        this.eggs = 1/2;
+        this.breadCrumbs = 1/8;
+        this.totalTime = 1/5;
+        test = this.totalTime
+
+    },
+    update: function () {
+        this.beef = this.people/4;
+        this.eggs = this.people/2
+        this.breadCrumbs = this.people/8
+        if(this.beef > 5) {
+            this.totalTime = 2.5;
+        } else {
+            this.totalTime = this.beef/2
+        }
+        if(this.beef > 10) {
+            this.beef = 10
+            this.eggs = this.beef * 2;
+            this.breadCrumbs = this.beef * 8;
+            // console.log(this.eggs, this.breadCrumbs);
+           console.log("ingredients are not scaleable at this quantity")
+        }
+    }
+});
+
 </script>
+
+

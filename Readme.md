@@ -10,15 +10,15 @@ It's worthwhile to consider some principles as they relate to our objectives tog
     <thead>
         <tr>
             <td></td>
-            <th>Effectiveness</th>
-            <th>Efficiency</th>
+            <th>[Effectiveness](http://www.merriam-webster.com/dictionary/effective)</th>
+            <th>[Efficiency](http://www.merriam-webster.com/dictionary/efficiency)</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th>Meaning</th>
-            <td>Effectiveness is about doing the right task, completing activities and achieving goals.</td>
-            <td>Efficiency is about doing things in an optimal way, for example doing it the fastest or in the least expensive way. It could be the wrong thing, but it was done optimally.</td>
+            <th>[Meaning](http://www.merriam-webster.com/dictionary/meaning)</th>
+            <td>**Effectiveness is about doing the _right_ task, _completing_ activities and _achieving_ goals.**</td>
+            <td>**Efficiency is about doing things in an _optimal_ way, for example doing it the fastest or in the least expensive way. It could be the wrong thing, but it was done _optimally_.**</td>
         </tr>
         <tr>
             <th>Effort oriented</th>
